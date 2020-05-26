@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/forum
+    username: postgres
+    password: 'password@123'
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+
+server:
+  port:  ${PORT:7003}
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/

@@ -1,4 +1,4 @@
-package com.binus.project.forumcoreapplication.service.utils;
+package com.binus.project.forumcoreapplication.web.utils;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
