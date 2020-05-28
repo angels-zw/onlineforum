@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://ec2-34-230-231-71.compute-1.amazonaws.com.com/ddkr9sg126khqh
+    url: jdbc:postgresql://ec2-34-230-231-71.compute-1.amazonaws.com/ddkr9sg126khqh
     username: nxtwkorcambfxr
     password: 5469a6b67eba112f8b3f852be83073712740358763ed4826ea96f353af1369f6
   jpa:
