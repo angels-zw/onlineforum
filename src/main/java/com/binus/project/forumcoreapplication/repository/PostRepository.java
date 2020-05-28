@@ -1,4 +1,6 @@
 package com.binus.project.forumcoreapplication.repository;
 
-public interface PostRepository {
+import com.binus.project.forumcoreapplication.domain.entities.Post;
+
+public interface PostRepository extends BaseRepository<Post>  {
 }

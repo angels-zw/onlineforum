@@ -5,7 +5,7 @@ import com.binus.project.forumcoreapplication.domain.models.CreateArticleRequest
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+//interface for the article service
 @Service
 public interface ArticleService {
 

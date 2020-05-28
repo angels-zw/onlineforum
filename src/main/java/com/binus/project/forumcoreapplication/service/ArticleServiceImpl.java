@@ -46,8 +46,8 @@ public class ArticleServiceImpl implements ArticleService {
         LOGGER.info("like article service implement ");
         Article article = articleRepository.findById(articleId).orElseThrow(() -> new InvalidRequestException("Article not found"));
         Long likes = article.getLikes();
-        System.out.println(likes++);
-        article.setLikes(likes++);
+        article.setLikes(likes + 1);
+        System.out.println(article.getLikes());
         articleRepository.save(article);
 
 

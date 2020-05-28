@@ -28,11 +28,11 @@ import java.util.Collections;
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-                "",
+                "Mental health forum core application api",
                 "",
                 "1.0",
                 "Terms of service",
-                new Contact("", "0771967513", "angelsmakuwerere@gmail.com"),
+                new Contact("", "0000000000000000", "tatendatasara@gmail.com"),
                 "License of API", "API license URL", Collections.emptyList());
     }
 

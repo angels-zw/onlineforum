@@ -1,40 +1,36 @@
 package com.binus.project.forumcoreapplication.domain.models;
 
 
-
 public class CreateArticleRequest {
 
-     String title;
+    String title;
 
-     String username;
+    String username;
 
-     String articleBody;
+    String content;
 
-     public String getTitle() {
-          return title;
-     }
+    public String getTitle() {
+        return title;
+    }
 
-     public void setTitle(String title) {
-          this.title = title;
-     }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-     public String getUsername() {
-          return username;
-     }
+    public String getUsername() {
+        return username;
+    }
 
-     public void setUsername(String username) {
-          this.username = username;
-     }
-
-
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
 
+    public String getContent() {
+        return content;
+    }
 
-     public String getArticleBody() {
-          return articleBody;
-     }
-
-     public void setArticleBody(String articleBody) {
-          this.articleBody = articleBody;
-     }
+    public void setContent(String content) {
+        this.content = content;
+    }
 }

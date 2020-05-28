@@ -25,20 +25,20 @@ public class Article {
     private String username;
     @Column(name = "likes")
     private Long likes;
-    @Column(name = "article_body", nullable = false, length = 500)
-    private String articleBody;
+    @Column(name = "content", nullable = false, length = 1500)
+    private String content;
 
     public Article() {
     }
 
-    public Article(String title, String username, String articleBody) {
+    public Article(String title, String username, String content) {
         this.title = title;
         this.username = username;
-        this.articleBody = articleBody;
+        this.content = content;
     }
 
    public static Article  createArticle(CreateArticleRequest createArticleRequest) {
-     return new Article(createArticleRequest.getTitle(),createArticleRequest.getUsername() ,createArticleRequest.getArticleBody());
+     return new Article(createArticleRequest.getTitle(),createArticleRequest.getUsername() ,createArticleRequest.getContent());
     }
 
     @PrePersist
@@ -94,11 +94,11 @@ public class Article {
         this.likes = likes;
     }
 
-    public String getArticleBody() {
-        return articleBody;
+    public String getContent() {
+        return content;
     }
 
-    public void setArticleBody(String articleBody) {
-        this.articleBody = articleBody;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

@@ -1,4 +1,4 @@
-package com.binus.project.forumcoreapplication.service.utils;
+package com.binus.project.forumcoreapplication.web.utils;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

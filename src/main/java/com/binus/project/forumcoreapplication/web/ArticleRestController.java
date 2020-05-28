@@ -39,7 +39,7 @@ class ArticleRestController {
     }
 
 
-    @DeleteMapping("/{articleId}/")
+    @DeleteMapping("/{articleId}")
     MessageResponse deleteArticle(@PathVariable Long articleId) {
         LOGGER.info("Deleting article");
         articleService.deleteArticle(articleId);
@@ -48,7 +48,7 @@ class ArticleRestController {
     }
 
 
-    @GetMapping("/{articleId}/")
+    @GetMapping("/{articleId}")
     MessageResponse likeArticle(@PathVariable Long articleId) {
         LOGGER.info("Like article");
         articleService.likeArticle(articleId);
