@@ -33,4 +33,13 @@ public class CreateArticleRequest {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "CreateArticleRequest{" +
+                "title='" + title + '\'' +
+                ", username='" + username + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }

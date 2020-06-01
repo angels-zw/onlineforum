@@ -33,6 +33,7 @@ class ArticleRestController {
 
     @PostMapping
     MessageResponse createArticle(@RequestBody CreateArticleRequest createArticleRequest) {
+        System.out.println(createArticleRequest);
         LOGGER.info("Posting article : createArticleRequest={}", createArticleRequest);
         articleService.createArticle(createArticleRequest);
         return MessageResponse.createMessageResponse("article posted");
